@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icons8-math-48.png">
+    <title>Tip Calculator</title>
+    <link href="styles.css"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+        <header>
+            <h3>Tip Calculator</h3>
+        </header>
+        <hr/>
+        <div class="calculator">
+            <label for="amount">Bill Amount</label>
+            <br>
+            <button> 
+                <i class="fas fa-dollar-sign"></i>
+            </button><input id="amount" placeholder="Enter Amount" type="number"  min="0">
+            <br>
+            <label for="guest">Number of Guest</label>
+            <br>
+            <button> 
+              <i class="fas fa-female"></i>
+            </button><input id="guest" placeholder="Enter Number of Guest" type="number" min="1" >
+            <label for="serviceQuality">Service Quality</label>
+            <br>
+             <button><i class="fas fa-hotel"></i></button><select id="serviceQuality" name="quality">
+                 <option value="" disabled selected>Choose...</option>
+                 <option value="0.3">30% - Outstanding</option>
+                 <option value="0.2">20% - Best</option>
+                 <option value="0.1">10% - Good</option>
+                 <option value="0.5">5% - Terrible</option>
+             </select>
+             <hr/>
+        </div>
+        <footer>
+            <button id="calculate">
+                Calculate
+            </button>
+        </footer>
+    </div>
+      <div  class="modal">
+        <button class="close">&times</button>
+        <p class="text"></p>
+       </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
